@@ -1,0 +1,6 @@
+*.dblite
+*.so
+*.exe
+
+logs/
+dist/

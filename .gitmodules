@@ -1,0 +1,3 @@
+[submodule "GML"]
+	path = GML
+	url = git@github.com:scr1pti3/GML.git
