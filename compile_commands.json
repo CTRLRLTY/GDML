@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "command": "clang++ -o src/gdml.os -c -arch x86_64 -fPIC -std=c++20 -g -O0 -fPIC -I. -Iinclude -Igodot-cpp/godot-headers -Igodot-cpp/include -Igodot-cpp/include/core -Igodot-cpp/include/gen src/gdml.cpp",
+        "directory": "/home/sunaki/project/cpp/gdml",
+        "file": "src/gdml.cpp",
+        "output": "src/gdml.os"
+    },
+    {
+        "command": "clang++ -o src/gdlibrary.os -c -arch x86_64 -fPIC -std=c++20 -g -O0 -fPIC -I. -Iinclude -Igodot-cpp/godot-headers -Igodot-cpp/include -Igodot-cpp/include/core -Igodot-cpp/include/gen src/gdlibrary.cpp",
+        "directory": "/home/sunaki/project/cpp/gdml",
+        "file": "src/gdlibrary.cpp",
+        "output": "src/gdlibrary.os"
+    }
+]

@@ -1,6 +1,7 @@
 *.dblite
 *.so
 *.exe
+*.cache
 
 logs/
 dist/
