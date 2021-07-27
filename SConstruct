@@ -1,16 +1,21 @@
 from glob import glob
 
+# Archtecture Targets
 bits = 64
-godot_headers_path = "godot-cpp/godot-headers/"
-cpp_bindings_path = "godot-cpp/"
-cpp_library = "libgodot-cpp.linux.debug." + str(bits)
+
+# Libraries Paths
+GML_path = "GML/bin/"
+godotcpp_path = "godot-cpp/"
+godotheaders_path = "godot-cpp/godot-headers/"
+
+libgodotcpp = "libgodot-cpp.linux.debug." + str(bits)
 
 options = {
     "CXX": "clang++",
     "CCFLAGS": "-arch x86_64 -fPIC -std=c++20 -g -O0",
-    "CPPPATH": ['.', './include/', godot_headers_path, cpp_bindings_path + 'include/', cpp_bindings_path + 'include/core/', cpp_bindings_path + 'include/gen/'],
-    "LIBPATH": [cpp_bindings_path + 'bin/'],
-    "LIBS": [cpp_library],
+    "CPPPATH": ['.', './GML/headers/', godotheaders_path, godotcpp_path + 'include/', godotcpp_path + 'include/core/', godotcpp_path + 'include/gen/'],
+    "LIBPATH": [godotcpp_path + 'bin/', GML_path],
+    "LIBS": [libgodotcpp],
     "COMPILATIONDB_USE_ABSPATH": True
 }
 

@@ -1,14 +1,20 @@
 [
     {
-        "command": "clang++ -o src/gdlibrary.os -c -arch x86_64 -fPIC -std=c++20 -g -O0 -fPIC -I. -Iinclude -Igodot-cpp/godot-headers -Igodot-cpp/include -Igodot-cpp/include/core -Igodot-cpp/include/gen src/gdlibrary.cpp",
+        "command": "clang++ -o src/gdlibrary.os -c -arch x86_64 -fPIC -std=c++20 -g -O0 -fPIC -I. -IGML/headers -Igodot-cpp/godot-headers -Igodot-cpp/include -Igodot-cpp/include/core -Igodot-cpp/include/gen src/gdlibrary.cpp",
         "directory": "/home/sunaki/project/Godot/Patriark Game 1/gdml",
         "file": "src/gdlibrary.cpp",
         "output": "src/gdlibrary.os"
     },
     {
-        "command": "clang++ -o src/gdml.os -c -arch x86_64 -fPIC -std=c++20 -g -O0 -fPIC -I. -Iinclude -Igodot-cpp/godot-headers -Igodot-cpp/include -Igodot-cpp/include/core -Igodot-cpp/include/gen src/gdml.cpp",
+        "command": "clang++ -o src/GDML.os -c -arch x86_64 -fPIC -std=c++20 -g -O0 -fPIC -I. -IGML/headers -Igodot-cpp/godot-headers -Igodot-cpp/include -Igodot-cpp/include/core -Igodot-cpp/include/gen src/GDML.cpp",
         "directory": "/home/sunaki/project/Godot/Patriark Game 1/gdml",
-        "file": "src/gdml.cpp",
-        "output": "src/gdml.os"
+        "file": "src/GDML.cpp",
+        "output": "src/GDML.os"
+    },
+    {
+        "command": "clang++ -o src/GTree.os -c -arch x86_64 -fPIC -std=c++20 -g -O0 -fPIC -I. -IGML/headers -Igodot-cpp/godot-headers -Igodot-cpp/include -Igodot-cpp/include/core -Igodot-cpp/include/gen src/GTree.cpp",
+        "directory": "/home/sunaki/project/Godot/Patriark Game 1/gdml",
+        "file": "src/GTree.cpp",
+        "output": "src/GTree.os"
     }
 ]
