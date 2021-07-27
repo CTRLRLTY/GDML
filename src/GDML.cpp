@@ -8,9 +8,6 @@ using namespace godot;
 void GDML::_register_methods() {
   register_method("_ready", &GDML::_ready);
   register_method("create_tree", &GDML::create_tree);
-  //register_method("create_tdatacol", &GDML::create_tdatacol);
-  //register_method("create_tdata", &GDML::create_tdata);
-  //register_method("create_data", &GDML::create_data);
 }
 
 GDML::GDML() {}
@@ -93,13 +90,6 @@ GTree* GDML::create_tree(Array training_data) {
   GML::TREE<Variant> tree(tdata_col);
 
   gtree->set_tree(tree);
-  gtree->treename = "Created new Tree1111!";
 
   return gtree;
 }
-
-/*
-GTree* GDML::create_tree(Variant d) {
-  return GTree::_new(d);
-}
-*/

@@ -8,12 +8,9 @@ GTree::~GTree() {}
 
 void GTree::_register_methods() {
   register_method("predict", &GTree::predict);
-  register_method("test", &GTree::test);
 }
 
-void GTree::_init() {
-  treename = "DefaultTree";
-}
+void GTree::_init() {}
 
 Dictionary GTree::predict(Array data) {
   Godot::print("Predicting stuff!!");
@@ -29,6 +26,3 @@ void GTree::set_tree(GML::TREE<Variant>& tree) {
   this->_tree = tree;
 }
 
-void GTree::test() {
-  Godot::print(this->treename);
-}

@@ -12,7 +12,6 @@ namespace godot {
     private:
       friend class GDML;
 
-      Variant treename;
       GML::TREE<Variant> _tree;
       void set_tree(GML::TREE<Variant>& tree);
       Dictionary predict(Array data);
@@ -22,7 +21,6 @@ namespace godot {
       void _init();
       GTree();
       ~GTree();
-      void test();
   };
   
 }
