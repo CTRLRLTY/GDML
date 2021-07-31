@@ -13,27 +13,8 @@ void GDML::_register_methods() {
 GDML::GDML() {}
 GDML::~GDML() {}
 
-void GDML::_init() {
-}
-
-void GDML::_ready() {
-  GML::TDATA_COL<String> training_data({
-        {"Apple", {"Green", "Big"}},
-        {"Apple", {"Yellow", "Big"}},
-        {"Grape", {"Red", "Small"}},
-        {"Grape", {"Red", "Small"}},
-        {"Lemon", {"Yellow", "Big"}}
-      });
-  GML::TREE tree(training_data);
-  auto dnode = tree.predict({{"Green", "Big"}});
-  GML::NODE_DATA nodedata = dnode.nodedata();
-  Dictionary dict;
-  dict["One"] = String("one");
-
-  int size = dict.size();
-  Godot::print(Variant(size));
-  Godot::print(dict["One"]);
-}
+void GDML::_init() {}
+void GDML::_ready() {}
 
 Dictionary GDML::class_count_to_dict(GML::CLASS_COUNT class_count) {
   Dictionary dict;
